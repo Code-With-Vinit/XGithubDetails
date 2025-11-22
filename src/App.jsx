@@ -48,8 +48,8 @@ function App() {
 
   return (
     <div className='container'>
-      <h1>Github User Finder</h1>
-      <h4>Search a Github username to see profile details.</h4>
+      <h1>GitHub User Finder</h1>
+      <h4>Search a GitHub username to see profile details.</h4>
 
       
         <form onSubmit={handleSubmit}>
@@ -96,7 +96,7 @@ function App() {
         data && !error && (
           <div>
               <img src={data.avatar_url} alt="" />
-              <h1>{data.name}<span>@{data.name}</span></h1>
+              <h1>{data.name}<span>@{data.login}</span></h1>
               <span>{data.public_repos} repos</span>
               <span>{data.followers} followers</span>
               <span>{data.following} following</span>
