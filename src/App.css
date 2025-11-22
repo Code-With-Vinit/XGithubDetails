@@ -6,6 +6,9 @@ body{
     align-items: center;
 }
 .container{
+    width: 40vw;
+    height: 100%;
+    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;

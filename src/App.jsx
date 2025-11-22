@@ -49,9 +49,9 @@ function App() {
   return (
     <div className='container'>
       <h1>Github User Finder</h1>
-      <p>Search a Github username to see profile details.</p>
+      <h4>Search a Github username to see profile details.</h4>
 
-      <div >
+      
         <form onSubmit={handleSubmit}>
           <input 
           type="text"
@@ -61,7 +61,6 @@ function App() {
           placeholder="e.g. torvalds, gaearon, octocat" />
           <button type="submit">Search</button>
         </form>
-      </div>
 
       
         {/* {initialData?(<div>No user yet. Try searching for "octocat".</div>):
